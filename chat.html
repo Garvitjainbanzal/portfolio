@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tailwind Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 flex items-center justify-start bg-white px-8 py-4 shadow">
+    <a href="#" class="mr-auto text-lg font-bold text-gray-900">Your Logo</a>
+    <a href="#work" class="mr-8 text-gray-700 hover:text-black transition">Work</a>
+    <a href="#thinking" class="mr-8 text-gray-700 hover:text-black transition">Thinking</a>
+    <a href="https://www.linkedin.com" target="_blank" class="text-gray-700 hover:text-black transition">Contact</a>
+  </nav>
+
+  <!-- Example Sections -->
+  <section id="work" class="h-screen flex flex-col items-center justify-center bg-gray-100">
+    <h1 class="text-4xl font-bold">Work</h1>
+    <p class="mt-4 max-w-md text-center text-gray-600">Content for Work section …</p>
+  </section>
+
+  <section id="thinking" class="h-screen flex flex-col items-center justify-center bg-gray-200">
+    <h1 class="text-4xl font-bold">Thinking</h1>
+    <p class="mt-4 max-w-md text-center text-gray-600">Content for Thinking section …</p>
+  </section>
+</body>
+</html>
