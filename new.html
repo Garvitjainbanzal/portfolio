@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garvit - DevOps Portfolio</title>
+  <!-- Google Fonts: Montserrat and Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+  <!-- Navigation Bar -->
+  <nav class="flex justify-center mt-8">
+    <div class="flex items-center bg-gray-100 rounded-full shadow-md px-6 py-2 space-x-6">
+      <!-- Logo/Avatar with status dot -->
+      <div class="relative">
+        <img src="garvit-devops.jpg" alt="Logo"
+          class="w-8 h-8 rounded-full border-2 border-white shadow ring-2 ring-purple-200 hover:ring-purple-400 transition"/>
+        <span class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
+      </div>
+      <!-- Navigation Links -->
+      <ul class="flex space-x-6 text-gray-700 font-poppins">
+        <li>
+          <a href="#about" class="relative text-purple-600 font-semibold after:block after:w-2 after:h-2 after:rounded-full after:bg-purple-600 after:mx-auto after:mt-1">About</a>
+        </li>
+        <li>
+          <a href="#work" class="hover:text-purple-600 transition-colors">Work</a>
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-purple-600 transition-colors">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-purple-600 transition-colors">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <button id="theme-toggle" aria-label="Toggle Dark Mode" class="ml-4 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600">
+  <!-- Icon placeholder, e.g. sun/moon SVG -->
+  <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.485-11.485l-.707-.707M4.222 19.778l-.707-.707m16.971 2.12l-.707-.707M6.343 6.343l-.707-.707M21 12h-1M4 12H3m15.364 6.364l-.707-.707M6.343 17.657l-.707-.707"></path>
+  </svg>
+  <svg id="theme-toggle-dark-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+  </svg>
+</button>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-start pt-24 px-6 max-w-4xl mx-auto space-y-6">
+    <h1 class="text-4xl md:text-7xl font-extrabold font-montserrat leading-tight max-w-xl tracking-tight min-h-[5rem]">
+      <span id="typed"></span>
+    </h1>
+    <p class="text-lg max-w-lg leading-relaxed text-gray-700">
+      DevOps engineer passionate about automation, cloud infrastructure, and continuous delivery. I build scalable, reliable systems with a focus on automation and performance.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section data-aos="fade-up" id="about" class="max-w-4xl mx-auto px-6 py-20 md:py-28 my-10 bg-gray-50 rounded-xl shadow p-6 border border-purple-100">
+    <h2 class="text-3xl md:text-5xl font-semibold font-montserrat border-b-4 border-purple-600 pb-2 mb-8 tracking-tight">
+      About
+    </h2>
+    <div class="flex flex-col md:flex-row items-center md:space-x-10">
+      <img src="garvit-devops.jpg" alt="Garvit Jain Banzal" class="w-36 h-36 rounded-full shadow-lg mb-8 md:mb-0 object-cover"/>
+      <div class="text-gray-800 font-poppins space-y-4 max-w-xl">
+        <p class="text-lg leading-relaxed">
+          Hi, I am Garvit Jain Banzal, a DevOps engineer passionate about designing scalable, reliable cloud infrastructure solutions.
+        </p>
+        <p class="text-lg leading-relaxed">
+          With a strong focus on automation, continuous delivery, and performance optimization, I strive to build systems that streamline development workflows and empower teams.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Welcome to my portfolio where I share my journey and experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section data-aos="fade-up" data-aos-delay="100" id="work" class="max-w-4xl mx-auto px-6 py-20 md:py-28 space-y-10">
+    <h2 class="text-3xl md:text-5xl font-semibold font-montserrat border-b-4 border-purple-600 pb-2 mb-10 tracking-tight">
+      Work Experience
+    </h2>
+
+    <!-- SmartDocs Inc. -->
+    <div class="bg-gray-50 rounded-xl shadow p-6 space-y-4">
+      <h3 class="text-2xl font-bold font-montserrat">Junior DevOps Engineer</h3>
+      <p class="italic text-purple-600 font-semibold">SmartDocs Inc. - Hyderabad, Telangana</p>
+      <p class="text-gray-700 font-semibold">May 2024 – Present</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2 max-w-xl">
+        <li>Designed & managed CI/CD pipelines using Jenkins & Kubernetes (AKS), reducing deployment times by 30%.</li>
+        <li>Automated infrastructure provisioning with Terraform and Helm charts; optimized Azure resources, achieving 25% cost savings.</li>
+        <li>Developed and maintained Kubernetes manifests (Deployments, Services, PV, PVC, DaemonSets, Namespaces).</li>
+        <li>Implemented container vulnerability assessments and secure deployment practices, reducing incidents by 15%.</li>
+        <li>Created and managed Docker images for microservices, integrated with repositories such as Azure Container Registry (ACR).</li>
+      </ul>
+    </div>
+
+    <!-- Foundit -->
+    <div class="bg-gray-50 rounded-xl shadow p-6 space-y-4">
+      <h3 class="text-2xl font-bold font-montserrat">DevOps Engineer Intern</h3>
+      <p class="italic text-purple-600 font-semibold">Foundit - Hyderabad, Telangana</p>
+      <p class="text-gray-700 font-semibold">Aug 2023 – May 2024</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2 max-w-xl">
+        <li>Migrated and managed Linux-based workloads to Kubernetes clusters with Prometheus/Grafana monitoring, reducing failure rates by 45%.</li>
+        <li>Built Helm charts and Kubernetes pipelines for microservice deployments, improving release efficiency by 33%.</li>
+        <li>Used OWASP ZAP for vulnerability scanning and security compliance across CI/CD workflows.</li>
+        <li>Implemented observability using Nagios and Elastic APM, ensuring high availability and proactive issue resolution.</li>
+      </ul>
+    </div>
+
+    <!-- Wipro -->
+    <div class="bg-gray-50 rounded-xl shadow p-6 space-y-4">
+      <h3 class="text-2xl font-bold font-montserrat">Project Engineer</h3>
+      <p class="italic text-purple-600 font-semibold">Wipro - Bengaluru, Karnataka</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2 max-w-xl">
+        <li>Trained on Azure Cloud, CI/CD pipelines, and DevOps fundamentals.</li>
+        <li>Achieved Microsoft Azure Fundamentals (AZ-900) certification.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section --> 
+  <section data-aos="fade-up" data-aos-delay="200" id="projects" class="max-w-4xl mx-auto px-6 py-20 md:py-28 my-10 bg-gray-50 rounded-xl shadow p-6 border border-purple-100">
+    <h2 class="text-3xl md:text-5xl font-semibold font-montserrat border-b-4 border-purple-600 pb-2 mb-8 tracking-tight">
+      Projects
+    </h2>
+    <div class="space-y-6">
+      <p class="text-gray-800 leading-relaxed text-lg max-w-xl">
+        Sharing insights and best practices on cloud infrastructure, automation, and DevOps methodologies. Regular blog posts and technical deep-dives to help the community.
+      </p>
+      <a href="#" class="inline-block px-6 py-3 mt-2 bg-purple-600 text-white font-semibold rounded-full shadow hover:bg-purple-700 transition">Explore my Projects</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section data-aos="fade-up" data-aos-delay="300" id="contact" class="max-w-4xl mx-auto px-6 py-20 md:py-28 my-10 bg-gray-50 rounded-xl shadow p-6 border border-purple-100">
+    <h2 class="text-3xl md:text-5xl font-semibold font-montserrat border-b-4 border-purple-600 pb-2 mb-8 tracking-tight">
+      Contact
+    </h2>
+    <div class="space-y-6 text-gray-800 text-lg max-w-xl font-poppins">
+      <p>
+        Email: <a href="mailto:garvitjb27250@gmail.com" class="text-purple-600 hover:underline">garvitjb27250@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn: <a href="https://www.linkedin.com/in/garvit-jain-banzal-764406254/" class="text-purple-600 hover:underline">linkedin.com/in/garvit-jain-banzal-764406254/</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-400 py-8">
+    © 2025 Garvit Jain Banzal. Built with Tailwind CSS.
+  </footer>
+
+  <!-- Typed.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Typed('#typed', {
+        strings: [
+          "Scaling Infrastructure worth relying on.",
+          "Automating Cloud Deployments.",
+          "Building DevOps solutions.",
+          "Ensuring Continuous Delivery."
+        ],
+        typeSpeed: 55,
+        backSpeed: 30,
+        backDelay: 1200,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|',
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+  </script>
+
+</body>
+</html>
